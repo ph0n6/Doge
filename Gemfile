@@ -22,6 +22,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 # Use Devise
 gem 'devise'
+# Use bootstrap forms
+gem 'bootstrap_form'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
