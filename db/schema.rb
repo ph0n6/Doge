@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180511081447) do
+ActiveRecord::Schema.define(version: 20180512075518) do
+
+  create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "name"
+    t.string "branch"
+  end
+
+  create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "title"
+    t.text "content"
+    t.bigint "category_id"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category_id"], name: "index_posts_on_category_id"
+    t.index ["user_id"], name: "index_posts_on_user_id"
+  end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name", default: "", null: false
