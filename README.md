@@ -25,3 +25,4 @@ Things you may want to cover:
 
   * FactoryGirl deprecated -> change all to FactoryBot (factory_girl -> factory_bot)
   * Because of stub() deprecated : 'helper.stub(:user_signed_in?)' -> 'allow(helper).to receive(:user_signed_in?)'
+  * Remember to run 'sudo apt install phantomjs' or for MAC USER : 'brew install phantomjs'

@@ -1,7 +1,7 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 require 'capybara/poltergeist'
-require 'factory_bot'
+require 'factory_bot_rails'
 require 'capybara/rspec'
 
 Capybara.javascript_driver = :poltergeist
