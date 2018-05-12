@@ -21,4 +21,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Note:
+
+  * FactoryGirl deprecated -> change all to FactoryBot (factory_girl -> factory_bot)
+  * Because of stub() deprecated : 'helper.stub(:user_signed_in?)' -> 'allow(helper).to receive(:user_signed_in?)'
