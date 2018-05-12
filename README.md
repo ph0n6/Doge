@@ -21,4 +21,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Note:
+
+  * FactoryGirl deprecated -> change all to FactoryBot (gem 'factory_girl_rails' -> gem 'factory_bot_rails')
+  * Because of stub() deprecated : 'helper.stub(:user_signed_in?)' -> 'allow(helper).to receive(:user_signed_in?)'
+  * Remember to run 'sudo apt install phantomjs' or for MAC USER : 'brew install phantomjs'

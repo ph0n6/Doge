@@ -23,8 +23,9 @@ gem 'jquery-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'devise'
-
 gem 'bootstrap_form'
+gem 'faker'
+gem 'will_paginate'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -46,6 +47,12 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rspec-rails', '~> 3.6'
+  gem 'factory_bot_rails'
+  gem 'rails-controller-testing'
+  gem 'headless'
+  gem 'poltergeist'
+  gem 'database_cleaner'
 end
 
 group :development do
