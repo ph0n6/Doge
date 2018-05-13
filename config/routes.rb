@@ -18,4 +18,7 @@ Rails.application.routes.draw do
       get 'team'
     end
   end
+
+  resources :contacts, only: [:create, :update, :destroy]
+
 end

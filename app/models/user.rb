@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_many :posts, dependent: :destroy
   
   # Association for Friends
-  has_many: friends
+  has_many :friends
   has_many :all_received_friend_requests,  
   class_name: "Friend", 
   foreign_key: "friend_id"
