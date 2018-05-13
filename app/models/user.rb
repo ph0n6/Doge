@@ -37,5 +37,6 @@ class User < ApplicationRecord
   # gets a friend record
   def friend(friend)
   Friend.where(user_id: self.id, friend_id: friend.id)[0]
-
+  end
+  
 end
