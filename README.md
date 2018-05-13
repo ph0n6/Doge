@@ -23,15 +23,15 @@ rspec spec
 ```
 
 ## Deployment instructions
-  ```
-  bundle install
-  
-  rails db:create
-  
-  rails db:migrate
-  
-  rails db:seed
-  ```
+```
+    bundle install
+
+    rails db:create
+    
+    rails db:migrate
+    
+    rails db:seed
+```
 
 ## Note:
 
