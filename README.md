@@ -15,16 +15,25 @@ Things you may want to cover:
 
 * Database initialization
 
-* How to run the test suite
-
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-  'bundle install'
-  'rails db:create'
-  'rails db:migrate'
+## How to run the test suite
+```
+rspec spec
+```
 
-* Note:
+## Deployment instructions
+  ```
+  bundle install
+  
+  rails db:create
+  
+  rails db:migrate
+  
+  rails db:seed
+  ```
+
+## Note:
 
   * FactoryGirl deprecated -> change all to FactoryBot (gem 'factory_girl_rails' -> gem 'factory_bot_rails')
   * Because of stub() deprecated : 'helper.stub(:user_signed_in?)' -> 'allow(helper).to receive(:user_signed_in?)'
